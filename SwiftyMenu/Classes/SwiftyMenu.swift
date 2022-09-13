@@ -159,6 +159,7 @@ extension SwiftyMenu: UITableViewDataSource {
         cell.selectionStyle = .none
         if let image = items[indexPath.row].image {
             cell.imageView?.image = image
+            cell.textLabel?.adjustsFontSizeToFitWidth = true
         }
 
         if attributes.multiSelect.isEnabled {
