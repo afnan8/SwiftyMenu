@@ -23,6 +23,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// `SwiftyMenuDisplayable` is the markable interface to allow custom types to be used with SwiftyMenu.
 public protocol SwiftyMenuDisplayable {
@@ -31,4 +32,7 @@ public protocol SwiftyMenuDisplayable {
     
     /// The value that will be returned when select menu item
     var retrievableValue: Any { get }
+    
+    var image: UIImage? { get }
+
 }

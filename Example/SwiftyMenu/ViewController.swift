@@ -15,15 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var dropDown: SwiftyMenu!
     @IBOutlet private weak var otherView: UIView!
 
-    /// Define menu data source
-    /// The data source type should conform to `SwiftyMenuDisplayable`
     private let dropDownOptionsDataSource = [
-        "Option 1", "Option 2", "Option 3",
-        "Option 4", "Option 5", "Option 6",
-        "Option 7", "Option 8", "Option 9"
-    ]
-
-    private let dropDownCodeOptionsDataSource = [
         MealSize(id: 1, name: "Small"),
         MealSize(id: 2, name: "Medium"),
         MealSize(id: 3, name: "Large"),
@@ -130,7 +122,7 @@ class ViewController: UIViewController {
         )
 
         /// Setup SwiftyMenu data source
-        dropDownCode.items = dropDownCodeOptionsDataSource
+        dropDownCode.items = dropDownOptionsDataSource
 
         /// SwiftyMenu also supports `CallBacks`
         dropDownCode.willExpand = {

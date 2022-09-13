@@ -8,13 +8,14 @@
 
 import Foundation
 import SwiftyMenu
-
-extension String: SwiftyMenuDisplayable {
-    public var displayableValue: String {
-        return self
-    }
-
-    public var retrievableValue: Any {
-        return self
-    }
-}
+//
+//extension String: SwiftyMenuDisplayable {
+//   
+//    public var displayableValue: String {
+//        return self
+//    }
+//
+//    public var retrievableValue: Any {
+//        return self
+//    }
+//}

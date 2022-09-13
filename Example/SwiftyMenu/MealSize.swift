@@ -8,13 +8,19 @@
 
 import Foundation
 import SwiftyMenu
+import UIKit
 
 struct MealSize {
     let id: Int
     let name: String
+    let mealImage: UIImage? = UIImage(named: "Group 13187")
 }
 
 extension MealSize: SwiftyMenuDisplayable {
+    public var image: UIImage? {
+        return self.mealImage
+    }
+    
     public var displayableValue: String {
         return self.name
     }
@@ -23,3 +29,4 @@ extension MealSize: SwiftyMenuDisplayable {
         return self.id
     }
 }
+

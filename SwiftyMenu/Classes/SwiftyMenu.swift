@@ -157,6 +157,9 @@ extension SwiftyMenu: UITableViewDataSource {
         cell.tintColor = attributes.textStyle.textStyleValues.color
         cell.backgroundColor = attributes.rowStyle.rowStyleValues.backgroundColor
         cell.selectionStyle = .none
+        if let image = items[indexPath.row].image {
+            cell.imageView?.image = image
+        }
 
         if attributes.multiSelect.isEnabled {
             if selectedIndecis[indexPath.row] != nil {
